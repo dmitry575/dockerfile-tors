@@ -10,4 +10,15 @@ This project need to you, if you want to start many TORs on different ports in o
 - Run command: `docker run -d -p 9050-9060:9050-9060 --rm --name many-tors many-tors`
 
 Parametr `TOR_INSTANCES` - edit how many tors processes start. Default value it is *10*. If you changed it, do not fogget about change ports. For example, `TOR_INSTANCES` = 15, command run docker change to:
+
 `docker run -d -e "TOR_INSTANCES=15" -p 9050-9065:9050-9065 --rm --name many-tors many-tors`
+
+
+This testing on Docker for Windwos.
+
+If you get error like:
+
+`Sending build context to Docker daemon  66.56kB
+Error response from daemon: open \\.\pipe\docker_engine_linux: The system cannot find the file specified.`
+
+Try to start or restart docker service on Windows
