@@ -12,7 +12,7 @@ TOR_INSTANCES=${TOR_INSTANCES:=10 }
 TOR_OPTIONS=${TOR_OPTIONS:=''}
 
 base_socks_port=9050
-base_control_port=11000
+base_control_port=8000
 dir_data="/tmp/multitor.$$"
 
 # Create data directory if it doesn't exist
